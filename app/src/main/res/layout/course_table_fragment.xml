@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:datebar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        layout="@layout/course_table_title"
+        />
+
+    <com.xiaohu.coursestabledemo.views.CourseDateBarView
+        android:id="@+id/datebar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        datebar:textColor="@color/colorDarkBlue"
+        android:layout_below="@id/title"
+        datebar:textSize="4sp"></com.xiaohu.coursestabledemo.views.CourseDateBarView>
+    <!-- 课程表body部分 -->
+    <ScrollView
+        android:id="@+id/scroll_body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datebar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.xiaohu.coursestabledemo.views.CourseNumersBarView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                datebar:numTextColor="@color/colorDarkBlue"
+                datebar:numTextHeight="48dp"
+                datebar:numTextSize="4sp"
+                datebar:numTextWidth="23dp"></com.xiaohu.coursestabledemo.views.CourseNumersBarView>
+
+            <!-- 课程信息 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.xiaohu.coursestabledemo.views.CourseContentView
+                    android:id="@+id/add_course_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.xiaohu.coursestabledemo.views.CourseContentView>
+
+                <!--<com.xiaohu.coursestabledemo.views.CourseContentView-->
+                    <!--android:id="@+id/course_content_rl"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@android:color/transparent">-->
+
+                <!--</com.xiaohu.coursestabledemo.views.CourseContentView>-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

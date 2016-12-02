@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CourseDateBarView">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textBackground" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="CourseNumbersBarView">
+        <attr name="numTextSize" format="dimension" />
+        <attr name="numTextWidth" format="dimension" />
+        <attr name="numTextHeight" format="dimension" />
+        <attr name="numTextColor" format="color" />
+    </declare-styleable>
+
+    <attr name="indicatorColor" format="color" />
+    <attr name="dividerColor" format="color" />
+    <attr name="bottomLineColor" format="color" />
+    <attr name="dividerMargin" format="dimension" />
+    <attr name="indicatorHeight" format="dimension" />
+    <attr name="bottomLineHeight" format="dimension" />
+    <attr name="dividerWidth" format="dimension" />
+    <declare-styleable name="SlidingTabView">
+        <attr name="indicatorColor" />
+        <attr name="dividerColor" />
+        <attr name="bottomLineColor" />
+        <attr name="dividerMargin" />
+        <attr name="indicatorHeight" />
+        <attr name="bottomLineHeight" />
+        <attr name="dividerWidth" />
+    </declare-styleable>
+
+</resources>
